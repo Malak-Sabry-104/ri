@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --wine:#7A0E0F;
+  --bige:#C4C48B;
+}
+
+html{
+  background-color: var(--wine);
+  scroll-behavior: smooth;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+  gap:40px;
+}
+.links li{
+  list-style-type: none;
+  padding: 20px;
+}
+.links a{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--bige);
+  text-decoration: none;
+}
+.header-text{
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--bige);
+  padding: 20px;
+  font-style: italic;
+}
+.bg-color{
+  background-color: var(--bige);
+  width:60%;
+  margin: 0 auto;
+  border-radius: 20px;
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.card{
+  width:80%;
+  display: flex;
+  padding:30px 0;
+  gap:20px;
+  align-items: center;
+
+}
+.card img{
+  width:200px;
+  border-radius: 13px;
+}
+.text-card h2{
+color:#7A0E0F;
+font-family:Arial, Helvetica, sans-serif ;
+}
+.text-card p{
+  color: rgb(71, 71, 71);
+  font-size: 16px;
+  margin: 7px;
+}
+span{
+  color: #7A0E0F;
+  text-decoration: underline;
+}
+
+#sec-2{
+  overflow-x: hidden;
+  position: relative;
+}
+.carousel{
+  width:100%;
+  height: 100vh;
+  display: flex;
+  transition: ease .5s;
+}
+.carousel img{
+  min-width: 100%;
+}
+.btn{
+  padding:20px;
+  border-radius: 100%;
+  outline: none;
+  border: none;
+  background-color: #ff060bdc;
+  color:white;
+  position: fixed;
+  margin: 30px;
+  right:0;
+  bottom:0;
+  z-index: 1000;
+  display: none;
+}
+
+.overlay{
+  position:absolute;
+  bottom: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.547);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 999;
+  
+}
+.overlay h1{
+font-size: 45px;
+}
+
+.overlay h1, .overlay p{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color:var(--bige);
+  padding: 20px;
+  font-style: italic;
+  
+}
+.drop-down{
+  display: none;
+  position:absolute;
+  background: #C4C48B;
+  padding: 20px;
+  margin:5px 0 0 0;
+}
